@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Counter"
         mc:Ignorable="d"
         ResizeMode="NoResize"
-        Title="MainWindow" Height="300" Width="300">
+        Title="Achievement updater" Height="300" Width="300">
     <Grid HorizontalAlignment="Center" Width="300" Height="284" VerticalAlignment="Bottom">
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -14,13 +14,13 @@
                 <GradientStop Color="#FFFFC500" Offset="0"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <TextBlock x:Name="Header" HorizontalAlignment="Center" Margin="0,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="280" FontFamily="Consolas" FontSize="26" FontWeight="Bold" Foreground="#FFFF9700"><Run Language="fi-fi" Text="Achievement updater"/></TextBlock>
-        <TextBlock x:Name="Tip" HorizontalAlignment="Center" Margin="0,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" FontFamily="Consolas"><Run Text="Tip: "/><Run Text="Add an ac"/><Run Language="fi-fi" Text="hi"/><Run Text="evement by clicking the button with the correct point count"/></TextBlock>
-        <Button x:Name="Five" Click="Five_Click" Content="5" HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top" Width="40" Height="40" FontFamily="Consolas" FontSize="20" Background="#FFFF9700"/>
-        <Button x:Name="Ten" Content="10" HorizontalAlignment="Left" Margin="70,165,0,0" VerticalAlignment="Top" Width="40" Height="40" FontFamily="Consolas" FontSize="20" Background="#FFFF9700"/>
-        <Button x:Name="Twenty" Content="20" Margin="190,165,70,79" FontFamily="Consolas" FontSize="20" Background="#FFFF9700"/>
-        <Button x:Name="Twentyfive" Content="25" Margin="250,165,10,79" FontFamily="Consolas" FontSize="20" Background="#FFFF9700"/>
-        <Button x:Name="Fifteen" Content="15" HorizontalAlignment="Center" Width="40" FontFamily="Consolas" FontSize="20" Height="40" VerticalAlignment="Top" Background="#FFFF9700" Margin="0,165,0,0"/>
-
+        <TextBlock x:Name="Header" HorizontalAlignment="Center" Margin="0,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="280" FontFamily="Consolas" FontSize="26" FontWeight="Bold" Foreground="#FFFF9700"><Run Language="fi-fi" Text="Achievement updater"/></TextBlock>
+        <TextBlock x:Name="Tip" HorizontalAlignment="Center" Margin="0,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="280" FontFamily="Consolas" Opacity="0.5"><Run Text="Tip: "/><Run Text="Add an ac"/><Run Language="fi-fi" Text="hi"/><Run Text="evement by clicking the button with the correct point count"/></TextBlock>
+        <Button x:Name="Five" Click="Nmbr_Click" Content="5" HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top" Width="40" Height="40" FontFamily="Consolas" FontSize="20" Background="#FFFF9700"/>
+        <Button x:Name="Ten" Click="Nmbr_Click" Content="10" HorizontalAlignment="Left" Margin="70,165,0,0" VerticalAlignment="Top" Width="40" Height="40" FontFamily="Consolas" FontSize="20" Background="#FFFF9700"/>
+        <Button x:Name="Fifteen" Click="Nmbr_Click" Content="15" HorizontalAlignment="Center" Width="40" FontFamily="Consolas" FontSize="20" Height="40" VerticalAlignment="Top" Background="#FFFF9700" Margin="0,165,0,0"/>
+        <Button x:Name="Twenty" Click="Nmbr_Click" Content="20" Margin="190,165,70,79" FontFamily="Consolas" FontSize="20" Background="#FFFF9700"/>
+        <Button x:Name="Twentyfive" Click="Nmbr_Click" Content="25" Margin="250,165,10,79" FontFamily="Consolas" FontSize="20" Background="#FFFF9700"/>
+        <Button Content="C" Click="Clear_Click" HorizontalAlignment="Left" Margin="275,22,0,0" VerticalAlignment="Top" Width="15" Background="#FFFF8000" FontWeight="Normal" FontFamily="Consolas" Height="14" FontSize="10"/>
     </Grid>
 </Window>
